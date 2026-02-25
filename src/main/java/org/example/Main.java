@@ -3,12 +3,25 @@ package org.example;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+    static char [] colores = {'A','B','C','D'};
+    static int cantidadHabitaciones = 0;
     public static void main(String[] args) {
 
-    ColorearHabitacion programa = new ColorearHabitacion();
+        ColorearHabitacion programa = new ColorearHabitacion();
 
+//        String planoDePrueba =
+//                "##########\n" +
+//                        "#   #    #\n" +
+//                        "#   #    #\n" +
+//                        "## #### ##\n" +
+//                        "#        #\n" +
+//                        "#        #\n" +
+//                        "#  #######\n" +
+//                        "#  #  #  #\n" +
+//                        "#        #\n" +
+//                        "##########";
         String planoDePrueba =
-                        "##########\n" +
+                "##########\n" +
                         "#   #    #\n" +
                         "#   #    #\n" +
                         "## #### ##\n" +
@@ -26,17 +39,19 @@ public class Main {
 
 
         String otroPlano =
-                "##########\n" +
-                "#   #    #\n" +
-                "#   #    #\n" +
-                "## #### ##\n" +
-                "#        #\n" +
-                "#        #\n" +
-                "##########\n";
+                        "##########\n" +
+                        "#   #    #\n" +
+                        "#   #    #\n" +
+                        "## #### ##\n" +
+                        "#        #\n" +
+                        "#        #\n" +
+                        "##########\n";
         System.out.println("Plano origianal de Otro Plano");
         System.out.println(otroPlano);
 
         System.out.println("\nPlano Procesado: ");
         programa.procesarYMostrar(otroPlano);
+
+
     }
 }
